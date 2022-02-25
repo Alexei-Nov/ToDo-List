@@ -3,7 +3,6 @@ const todo = {
 		const target = e.target;
 		if (target.classList.contains('todo__action')) {
 			const action = target.dataset.todoAction;
-			console.log(target.dataset);
 			const elemItem = target.closest('.todo__item');
 			if (action === 'deleted' && elemItem.dataset.todoState === 'deleted') {
 				elemItem.remove();
